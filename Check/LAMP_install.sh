@@ -31,3 +31,23 @@ else
 fi
 # Test PHP Processing
 echo '<?php phpinfo(); ?>' | sudo tee /var/www/html/phpinfo.php
+
+# Display installation summary
+echo ""
+echo "============================================"
+echo " LAMP Stack Installation Complete"
+echo "============================================"
+echo "Installed Versions:"
+echo " - Apache: $(apache2 -v | head -n 1 | awk '{print $3}')"
+echo " - MariaDB: $(mariadb --version | awk '{print $5}')"
+echo " - PHP: $(php --version | head -n 1 | awk '{print $2}')"
+echo ""
+echo "Security Information:"
+echo " - MariaDB root password is temporarily set to: password"
+echo " - THIS IS NOT SECURE! You must change it immediately!"
+echo " - Change password using: mysqladmin -u root -p password newpassword"
+echo " - Then update all applications using this password"
+echo ""
+echo "Test PHP installation by visiting:"
+echo "http://your_server_ip/phpinfo.php"
+echo "============================================"
