@@ -2,6 +2,10 @@
 
 echo "not tested"
 
+apt update
+apt upgrade -y
+apt install sudo
+
 # Function to display error messages
 display_error() {
     echo "Error: $1"
