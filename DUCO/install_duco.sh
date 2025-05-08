@@ -3,7 +3,7 @@
 # Step 1
 apt update
 apt upgrade -y
-apt install python3 python3-dev python3-pip curl python3-dev git python3-pil python3-pil.imagetk python3.11-venv -y
+apt install python3 python3-dev python3-pip curl git python3-pil python3-pil.imagetk python3.11-venv -y
 # Step 2
 git clone https://github.com/revoxhere/duino-coin
 cd duino-coin

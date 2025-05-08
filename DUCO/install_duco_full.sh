@@ -5,7 +5,7 @@ echo "Step 1"
 echo "Update your system and install requirements"
 apt update
 apt upgrade -y
-apt install python3 python3-dev python3-pip curl python3-dev git python3-pil python3-pil.imagetk python3.11-venv -y
+apt install python3 python3-dev python3-pip curl git python3-pil python3-pil.imagetk python3.11-venv -y
 # Step 2
 echo "Step 2"
 echo "Clone Duino-Coin repository"

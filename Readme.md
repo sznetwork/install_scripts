@@ -15,3 +15,4 @@ root user:
 
 - **install_duco.sh** - Duino coin miner installer on Debian based distrto
 - **install_duco.sh** - Duino coin miner on installer Debian based distrto with fasthash support
+- **install_duco_termux.sh** - Duino coin miner installer on Termux (no fasthash support)
