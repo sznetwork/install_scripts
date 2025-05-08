@@ -1,0 +1,43 @@
+su -
+nano /etc/apt/sources.list
+apt update & apt upgrade -y
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-agent zabbix-agent2 php-mysql
+mysql -uroot -p
+mariadb-secure-installation
+mysql -uroot -p
+zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix~
+cd /usr/share/zabbix-server-mysql/
+ls
+zcat schema.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+zcat images.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+zcat data.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+nano /etc/zabbix/zabbix_server.conf
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
+cd ..
+ls
+cd zabbix
+ls
+cd ..
+rm /var/www/html/index.html
+cp -r zabbix/* /var/www/html/
+nano /etc/php/8.2/apache2/php.ini
+
+systemctl restart zabbix-server zabbix-agent apache2
+/etc/zabbix/
+
+https://git.sznetwork.systems/SZN/bash_scripts.git
+
+https://sznetwork.systems/filemanager.php?p=&dl=compile_zabbix7.0.sh
+
+wget https://sznetwork.systems/pub/compile_zabbix7.0.sh
+
+Do you want to restart now? (Y/n):
+./compile_zabbix7.0.sh: 210: [[: not found
+./compile_zabbix7.0.sh: 210: : Permission denied
+./compile_zabbix7.0.sh: 210: : Permission denied
+
+
+AiMJP+rkkl+LJUmNR3XHdMSumE23MU1GLzh9mcvb6NQ= rustdesk
