@@ -26,18 +26,3 @@ cp -r zabbix/* /var/www/html/
 nano /etc/php/8.2/apache2/php.ini
 
 systemctl restart zabbix-server zabbix-agent apache2
-/etc/zabbix/
-
-https://git.sznetwork.systems/SZN/bash_scripts.git
-
-https://sznetwork.systems/filemanager.php?p=&dl=compile_zabbix7.0.sh
-
-wget https://sznetwork.systems/pub/compile_zabbix7.0.sh
-
-Do you want to restart now? (Y/n):
-./compile_zabbix7.0.sh: 210: [[: not found
-./compile_zabbix7.0.sh: 210: : Permission denied
-./compile_zabbix7.0.sh: 210: : Permission denied
-
-
-AiMJP+rkkl+LJUmNR3XHdMSumE23MU1GLzh9mcvb6NQ= rustdesk
