@@ -38,7 +38,8 @@ echo "----------------------------------------------------"
 sleep 2
 apt install libldap2-dev libopenipmi-dev \
 build-essential libsnmp-dev libevent-dev pkg-config \
-libpcre3-dev golang libxml2-dev libcurl4-openssl-dev \
+#libpcre3-dev
+golang libxml2-dev libcurl4-openssl-dev \
 apache2 php php-mysql php-gd php-xml php-bcmath php-mbstring php-ldap php-curl \
 libssh2-1-dev wget libmariadb-dev htop libmariadb-dev-compat -y
 echo ""
