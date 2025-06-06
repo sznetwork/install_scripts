@@ -190,11 +190,11 @@ echo "----------------------------------------------------"
 rm /var/www/html/index.html
 cp -r /root/zabbix-7.0.0/ui/* /var/www/html/
 chown -R www-data:www-data /var/www/html
-sed -i "s/max_execution_time = 30/max_execution_time = 300/" /etc/php/8.2/apache2/php.ini
-sed -i "s/memory_limit = 128M/memory_limit = 256M/" /etc/php/8.2/apache2/php.ini
-sed -i "s/post_max_size = 8M/post_max_size = 16M/" /etc/php/8.2/apache2/php.ini
-sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 16M/" /etc/php/8.2/apache2/php.ini
-sed -i "s/max_input_time = 60/max_input_time = 300/" /etc/php/8.2/apache2/php.ini
+sed -i "s/max_execution_time = 30/max_execution_time = 300/" /etc/php/8.4/apache2/php.ini
+sed -i "s/memory_limit = 128M/memory_limit = 256M/" /etc/php/8.4/apache2/php.ini
+sed -i "s/post_max_size = 8M/post_max_size = 16M/" /etc/php/8.4/apache2/php.ini
+sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 16M/" /etc/php/8.4/apache2/php.ini
+sed -i "s/max_input_time = 60/max_input_time = 300/" /etc/php/8.4/apache2/php.ini
 systemctl restart apache2
 echo ""
 sleep 2
