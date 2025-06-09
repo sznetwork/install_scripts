@@ -37,10 +37,10 @@ echo " INSTALLING REQUIRED PACKAGES "
 echo "----------------------------------------------------"
 sleep 2
 apt install libldap2-dev libopenipmi-dev \
-build-essential libsnmp-dev libevent-dev pkg-config \
+build-essential libsnmp-dev libevent-dev \
 golang libxml2-dev libcurl4-openssl-dev \
 apache2 php php-mysql php-gd php-xml php-bcmath php-mbstring php-ldap php-curl \
-libssh2-1-dev wget libmariadb-dev htop libmariadb-dev-compat -y
+libssh2-1-dev wget libmariadb-dev htop libmariadb-dev-compat libpcre2-dev pkg-config -y
 echo ""
 echo "----------------------------------------------------"
 echo " DOWNLOADING ZABBIX 7.0 SOURCES "
@@ -63,7 +63,7 @@ cd /root/zabbix-7.0.0 || { echo "Directory not found! Exiting."; exit 1; }
            --with-libxml2 \
            --with-openssl \
            --with-ssh2 \
-           --with-libpcre
+           --with-libpcre2
 echo ""
 echo " Zabbix configuration complete."
 sleep 5
