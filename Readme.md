@@ -27,3 +27,13 @@ Run example as *root*:
 `./add_sudo.sh`
 - **add_sudo.sh** - Ads desired user to sudo users.
 - **LAMP_install.sh** - Installs Apache MariaDB PHP stack.
+
+---
+3. **Zabbix**
+#### *sh* scripts to compile and install Zabbix
+Run example as *root*:
+<br>
+`chmod +x compile_zabbix7.0.sh`
+<br>
+`./compile_zabbix7.0.sh`
+- **compile_zabbix7.0.sh** - Compile and install Zabbix 7.0 on 32 bit (Tested on Debian 12 32 bit) on other systems not tested.
